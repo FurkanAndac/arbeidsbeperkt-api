@@ -1,0 +1,22 @@
+{
+  "name": "arbeidsbeperkt-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@clerk/clerk-js": "^5.15.0",
+    "@clerk/clerk-sdk-node": "^5.0.28",
+    "@clerk/express": "^0.0.29",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.3",
+    "socket.io": "^4.7.5"
+  }
+}
