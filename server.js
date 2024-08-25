@@ -13,7 +13,7 @@ const app = express();
 const port = 5000;
 
 // CORS configuration
-const allowedOrigins = ['http://localhost:8080', 'http://localhost:9000'];
+const allowedOrigins = ['http://localhost:8080', 'http://localhost:9000', 'https://arbeidsbeperkt.onrender.com'];
 
 const corsOptions = {
   origin: function(origin, callback) {
