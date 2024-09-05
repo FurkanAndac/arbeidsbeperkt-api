@@ -189,5 +189,5 @@ process.on('SIGINT', async () => {
 });
 
 app.listen(process.env.PORT || 5000, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${process.env.PORT}`);
 });
