@@ -4,13 +4,9 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoService = require('./services/mongoService');
-const authenticateRequest = require('./middleware/authentication');
 require('dotenv').config();
 
-const { ClerkExpressRequireAuth, withAuth } = require('@clerk/clerk-sdk-node');
-
 const app = express();
-const port = 5000;
 
 // CORS configuration
 const allowedOrigins = ['http://localhost:8080', 'http://localhost:9000', 'https://arbeidsbeperkt.onrender.com', 'https://arbeidsbeperkt.eu'];
@@ -192,6 +188,6 @@ process.on('SIGINT', async () => {
   process.exit(0);
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
